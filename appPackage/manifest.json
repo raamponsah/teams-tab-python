@@ -1,0 +1,37 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.16",
+    "version": "1.0.0",
+    "id": "7c3900f5-54e9-4184-8638-9d2df6258eaa",
+    "packageName": "com.example.helloteams",
+    "developer": {
+        "name": "Your Name",
+        "websiteUrl": "https://yourwebsite.com",
+        "privacyUrl": "https://yourwebsite.com/privacy",
+        "termsOfUseUrl": "https://yourwebsite.com/terms"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Hello Teams Tab",
+        "full": "Hello Teams Tab App"
+    },
+    "description": {
+        "short": "A simple Teams tab app",
+        "full": "This app displays a custom tab in Microsoft Teams with a greeting message."
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "helloTeamsTab",
+            "name": "Hello Teams Tab",
+            "contentUrl": "https://YOUR-RAILWAY-URL/helloWorldTab",
+            "websiteUrl": "https://YOUR-RAILWAY-URL/helloWorldTab",
+            "scopes": ["personal"]
+        }
+    ],
+    "permissions": ["identity", "messageTeamMembers"],
+    "validDomains": ["YOUR-RAILWAY-URL"]
+}
